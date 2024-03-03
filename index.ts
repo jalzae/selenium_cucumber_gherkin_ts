@@ -1,4 +1,4 @@
-const webdriver = require("selenium-webdriver");
+import webdriver from "selenium-webdriver";
 const By = webdriver.By;
 const until = webdriver.until;
 
@@ -6,7 +6,7 @@ let driver_fx = new webdriver.Builder().forBrowser("chrome").build();
 
 searchTest(driver_fx);
 
-function searchTest(driver) {
+function searchTest(driver:any) {
   driver.get("http://www.google.com");
   driver.findElement(By.name("q")).sendKeys("webdriver");
 
@@ -16,7 +16,7 @@ function searchTest(driver) {
 
 
   driver.sleep(5000).then(() => {
-    driver.getTitle().then((title) => {
+    driver.getTitle().then((title:string) => {
       console.log('Title : ', title)
       if (title.includes("webdriver")) {
         console.log("Test passed");
