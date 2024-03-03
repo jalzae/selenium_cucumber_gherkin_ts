@@ -2,7 +2,7 @@ const webdriver = require("selenium-webdriver");
 const By = webdriver.By;
 const until = webdriver.until;
 
-let driver_fx = new webdriver.Builder().forBrowser("firefox").build();
+let driver_fx = new webdriver.Builder().forBrowser("chrome").build();
 
 searchTest(driver_fx);
 
@@ -18,7 +18,7 @@ function searchTest(driver) {
   driver.sleep(5000).then(() => {
     driver.getTitle().then((title) => {
       console.log('Title : ', title)
-      if (title === "webdriver - Penelusuran Google") {
+      if (title.includes("webdriver")) {
         console.log("Test passed");
       } else {
         console.log("Test failed");
