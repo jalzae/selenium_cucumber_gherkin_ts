@@ -4,96 +4,148 @@
     "elements": [
       {
         "description": "",
-        "id": "sum-feature;sum-feature",
-        "keyword": "Scenario",
-        "line": 3,
-        "name": "Sum Feature",
+        "id": "google-search;open-google-and-search-for-various-terms",
+        "keyword": "Scenario Outline",
+        "line": 10,
+        "name": "Open Google and search for various terms",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 4,
-            "name": "I have entered 50 into the calculator",
+            "name": "I have opened Google",
             "match": {
-              "location": "features/example/example.ts:12"
+              "location": "features/google/google.ts:6"
             },
             "result": {
               "status": "passed",
-              "duration": 121625
+              "duration": 1861544457
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 5,
-            "name": "I have entered 70 into the calculator",
+            "name": "I search for \"webdriver\"",
             "match": {
-              "location": "features/example/example.ts:15"
+              "location": "features/google/google.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 24124
+              "duration": 227359165
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 6,
-            "name": "I press add",
+            "name": "Title is include with \"webdriver\"",
             "match": {
-              "location": "features/example/example.ts:18"
+              "location": "features/google/google.ts:15"
             },
             "result": {
               "status": "passed",
-              "duration": 38374
+              "duration": 2531244208
             }
           }
         ],
         "tags": [],
         "type": "scenario"
-      }
-    ],
-    "id": "sum-feature",
-    "line": 1,
-    "keyword": "Feature",
-    "name": "Sum Feature",
-    "tags": [],
-    "uri": "features/example/example.feature"
-  },
-  {
-    "description": "",
-    "elements": [
+      },
       {
         "description": "",
-        "id": "greeting;say-hello",
-        "keyword": "Scenario",
-        "line": 3,
-        "name": "Say hello",
+        "id": "google-search;open-google-and-search-for-various-terms",
+        "keyword": "Scenario Outline",
+        "line": 11,
+        "name": "Open Google and search for various terms",
         "steps": [
           {
             "arguments": [],
-            "keyword": "When ",
+            "keyword": "Given ",
             "line": 4,
-            "name": "the greeter says hello",
+            "name": "I have opened Google",
             "match": {
-              "location": "features/greeting/greeting.ts:9"
+              "location": "features/google/google.ts:6"
             },
             "result": {
               "status": "passed",
-              "duration": 21540
+              "duration": 1714349541
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I search for \"blogspot\"",
+            "match": {
+              "location": "features/google/google.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 180175707
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 5,
-            "name": "I should have heard \"hello\"",
+            "line": 6,
+            "name": "Title is include with \"blogspot\"",
             "match": {
-              "location": "features/greeting/greeting.ts:13"
+              "location": "features/google/google.ts:15"
             },
             "result": {
               "status": "passed",
-              "duration": 151333
+              "duration": 1116945374
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "google-search;open-google-and-search-for-various-terms",
+        "keyword": "Scenario Outline",
+        "line": 12,
+        "name": "Open Google and search for various terms",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I have opened Google",
+            "match": {
+              "location": "features/google/google.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2824339958
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I search for \"cucumber\"",
+            "match": {
+              "location": "features/google/google.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 187195124
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Title is include with \"cucumber\"",
+            "match": {
+              "location": "features/google/google.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1082732250
             }
           }
         ],
@@ -101,11 +153,11 @@
         "type": "scenario"
       }
     ],
-    "id": "greeting",
+    "id": "google-search",
     "line": 1,
     "keyword": "Feature",
-    "name": "Greeting",
+    "name": "Google Search",
     "tags": [],
-    "uri": "features/greeting/greeting.feature"
+    "uri": "features/google/google.feature"
   }
 ]

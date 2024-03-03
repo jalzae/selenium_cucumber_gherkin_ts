@@ -3,10 +3,12 @@
     "start": "npx tsc && node build/index.js",
     "test:cucumber": "cucumber-js -p default",
     "test": "tsc && cucumber-js && npm run report",
-    "report": "node report.js"
+    "report": "node report.js",
+    "test:file": "ts-node ./system/single.ts"
   },
   "dependencies": {
     "chai": "^5.1.0",
+    "child_process": "^1.0.2",
     "cucumber": "^6.0.7",
     "cucumber-html-reporter": "^7.1.1",
     "fs": "^0.0.1-security",
