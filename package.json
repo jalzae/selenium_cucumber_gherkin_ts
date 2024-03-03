@@ -2,13 +2,18 @@
   "scripts": {
     "start": "npx tsc && node build/index.js",
     "test:cucumber": "cucumber-js -p default",
-    "test": "tsc && cucumber-js"
+    "test": "tsc && cucumber-js",
+    "report": "node report.js"
   },
   "dependencies": {
     "chai": "^5.1.0",
     "cucumber": "^6.0.7",
+    "cucumber-html-reporter": "^7.1.1",
+    "fs": "^0.0.1-security",
     "jest": "^29.7.0",
+    "jest-cucumber": "^3.0.1",
     "nodemon": "^3.1.0",
+    "path": "^0.12.7",
     "selenium-webdriver": "^4.18.1",
     "ts-node": "^10.9.2"
   },

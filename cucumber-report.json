@@ -1,0 +1,111 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "sum-feature;sum-feature",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Sum Feature",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I have entered 50 into the calculator",
+            "match": {
+              "location": "features/example/example.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 120750
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I have entered 70 into the calculator",
+            "match": {
+              "location": "features/example/example.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28582
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I press add",
+            "match": {
+              "location": "features/example/example.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37124
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "sum-feature",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Sum Feature",
+    "tags": [],
+    "uri": "features/example/example.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "greeting;say-hello",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Say hello",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "the greeter says hello",
+            "match": {
+              "location": "features/greeting/greeting.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19124
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I should have heard \"hello\"",
+            "match": {
+              "location": "features/greeting/greeting.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 152540
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "greeting",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Greeting",
+    "tags": [],
+    "uri": "features/greeting/greeting.feature"
+  }
+]
