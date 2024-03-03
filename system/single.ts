@@ -7,7 +7,7 @@ try {
     throw 'Feature not found';
   }
 
-  exec(`npx cucumber-js ./features/${name}/${name}.feature`, (error, stdout, stderr) => {
+  exec(`npx cucumber-js ./features/${name}/${name}.feature && npm run report`, (error, stdout, stderr) => {
     if (error) {
       console.error(`Error: ${error}`);
       return;
