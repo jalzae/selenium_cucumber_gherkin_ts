@@ -18,8 +18,9 @@
               "location": "features/google/google.ts:6"
             },
             "result": {
-              "status": "passed",
-              "duration": 2858257415
+              "status": "failed",
+              "duration": 42931018542,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (/Users/applemacbookprom2/Project/Test/selenium_js_example/node_modules/@cucumber/cucumber/src/time.ts:52:14)\n    at listOnTimeout (node:internal/timers:569:17)\n    at processTimers (node:internal/timers:512:7)"
             }
           },
           {
@@ -31,8 +32,8 @@
               "location": "features/google/google.ts:11"
             },
             "result": {
-              "status": "passed",
-              "duration": 223396750
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -44,8 +45,8 @@
               "location": "features/google/google.ts:15"
             },
             "result": {
-              "status": "passed",
-              "duration": 747324125
+              "status": "skipped",
+              "duration": 0
             }
           }
         ],
@@ -68,8 +69,9 @@
               "location": "features/google/google.ts:6"
             },
             "result": {
-              "status": "passed",
-              "duration": 1704423332
+              "status": "failed",
+              "duration": 5059785374,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (/Users/applemacbookprom2/Project/Test/selenium_js_example/node_modules/@cucumber/cucumber/src/time.ts:52:14)\n    at listOnTimeout (node:internal/timers:569:17)\n    at processTimers (node:internal/timers:512:7)"
             }
           },
           {
@@ -81,8 +83,8 @@
               "location": "features/google/google.ts:11"
             },
             "result": {
-              "status": "passed",
-              "duration": 187540625
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -94,8 +96,8 @@
               "location": "features/google/google.ts:15"
             },
             "result": {
-              "status": "passed",
-              "duration": 894235249
+              "status": "skipped",
+              "duration": 0
             }
           }
         ],
@@ -118,8 +120,9 @@
               "location": "features/google/google.ts:6"
             },
             "result": {
-              "status": "passed",
-              "duration": 1651164125
+              "status": "failed",
+              "duration": 5072521417,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (/Users/applemacbookprom2/Project/Test/selenium_js_example/node_modules/@cucumber/cucumber/src/time.ts:52:14)\n    at listOnTimeout (node:internal/timers:569:17)\n    at processTimers (node:internal/timers:512:7)"
             }
           },
           {
@@ -131,8 +134,8 @@
               "location": "features/google/google.ts:11"
             },
             "result": {
-              "status": "passed",
-              "duration": 214263417
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -144,8 +147,8 @@
               "location": "features/google/google.ts:15"
             },
             "result": {
-              "status": "passed",
-              "duration": 965276417
+              "status": "skipped",
+              "duration": 0
             }
           }
         ],
