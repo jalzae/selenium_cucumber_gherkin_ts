@@ -4,35 +4,36 @@
     "elements": [
       {
         "description": "",
-        "id": "google-search;open-google-and-search-for-various-terms",
-        "keyword": "Scenario Outline",
-        "line": 10,
-        "name": "Open Google and search for various terms",
+        "id": "simple-android-test;verify-android-app-is-opened",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Verify Android App is Opened",
         "steps": [
           {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "I have opened Google",
-            "match": {
-              "location": "features/google/google.ts:6"
-            },
+            "keyword": "Before",
+            "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 42931018542,
-              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (/Users/applemacbookprom2/Project/Test/selenium_js_example/node_modules/@cucumber/cucumber/src/time.ts:52:14)\n    at listOnTimeout (node:internal/timers:569:17)\n    at processTimers (node:internal/timers:512:7)"
+              "status": "passed",
+              "duration": 71750
             }
           },
           {
             "arguments": [],
-            "keyword": "When ",
-            "line": 5,
-            "name": "I search for \"webdriver\"",
-            "match": {
-              "location": "features/google/google.ts:11"
-            },
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Apps opened normally and have some element",
             "result": {
-              "status": "skipped",
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "add some number",
+            "result": {
+              "status": "undefined",
               "duration": 0
             }
           },
@@ -40,115 +41,28 @@
             "arguments": [],
             "keyword": "Then ",
             "line": 6,
-            "name": "Title is include with \"webdriver\"",
-            "match": {
-              "location": "features/google/google.ts:15"
-            },
+            "name": "add in another input number",
             "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "google-search;open-google-and-search-for-various-terms",
-        "keyword": "Scenario Outline",
-        "line": 11,
-        "name": "Open Google and search for various terms",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "I have opened Google",
-            "match": {
-              "location": "features/google/google.ts:6"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 5059785374,
-              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (/Users/applemacbookprom2/Project/Test/selenium_js_example/node_modules/@cucumber/cucumber/src/time.ts:52:14)\n    at listOnTimeout (node:internal/timers:569:17)\n    at processTimers (node:internal/timers:512:7)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 5,
-            "name": "I search for \"blogspot\"",
-            "match": {
-              "location": "features/google/google.ts:11"
-            },
-            "result": {
-              "status": "skipped",
+              "status": "undefined",
               "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 6,
-            "name": "Title is include with \"blogspot\"",
-            "match": {
-              "location": "features/google/google.ts:15"
-            },
+            "line": 7,
+            "name": "click result and show correct result",
             "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "google-search;open-google-and-search-for-various-terms",
-        "keyword": "Scenario Outline",
-        "line": 12,
-        "name": "Open Google and search for various terms",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "I have opened Google",
-            "match": {
-              "location": "features/google/google.ts:6"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 5072521417,
-              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (/Users/applemacbookprom2/Project/Test/selenium_js_example/node_modules/@cucumber/cucumber/src/time.ts:52:14)\n    at listOnTimeout (node:internal/timers:569:17)\n    at processTimers (node:internal/timers:512:7)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 5,
-            "name": "I search for \"cucumber\"",
-            "match": {
-              "location": "features/google/google.ts:11"
-            },
-            "result": {
-              "status": "skipped",
+              "status": "undefined",
               "duration": 0
             }
           },
           {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 6,
-            "name": "Title is include with \"cucumber\"",
-            "match": {
-              "location": "features/google/google.ts:15"
-            },
+            "keyword": "After",
+            "hidden": true,
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 73541
             }
           }
         ],
@@ -156,11 +70,11 @@
         "type": "scenario"
       }
     ],
-    "id": "google-search",
+    "id": "simple-android-test",
     "line": 1,
     "keyword": "Feature",
-    "name": "Google Search",
+    "name": "Simple Android Test",
     "tags": [],
-    "uri": "features/google/google.feature"
+    "uri": "android/androidtest.feature"
   }
 ]

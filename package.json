@@ -5,36 +5,40 @@
     "test": "tsc && cucumber-js && npm run report",
     "report": "node report.js",
     "test:file": "ts-node ./system/single.ts",
+    "test:android": "ts-node ./system/android.ts",
     "wdio": "npx wdio run wdio.conf.js"
   },
   "dependencies": {
+    "@wdio/cucumber-framework": "^8.32.4",
+    "appium": "^2.1.3",
+    "assert": "^2.1.0",
     "chai": "^5.1.0",
     "child_process": "^1.0.2",
     "cucumber": "^6.0.7",
     "cucumber-html-reporter": "^7.1.1",
+    "dotenv": "^16.4.5",
     "fs": "^0.0.1-security",
     "jest": "^29.7.0",
     "jest-cucumber": "^3.0.1",
     "nodemon": "^3.1.0",
     "path": "^0.12.7",
+    "protractor-cucumber-framework": "^9.12.0",
     "selenium-webdriver": "^4.18.1",
     "ts-node": "^10.9.2",
-    "appium": "^2.1.3",
-    "assert": "^2.1.0",
     "webdriverio": "^8.18.2"
   },
   "devDependencies": {
     "@cucumber/cucumber": "^10.3.1",
     "@types/cucumber": "^7.0.0",
     "@types/selenium-webdriver": "^4.1.21",
-    "typescript": "^5.3.3",
     "@wdio/appium-service": "^8.18.2",
-    "@wdio/cli": "^8.18.2",
+    "@wdio/cli": "^8.32.4",
     "@wdio/dot-reporter": "^8.17.0",
     "@wdio/local-runner": "^8.18.2",
     "@wdio/mocha-framework": "^8.18.2",
     "@wdio/spec-reporter": "^8.18.1",
     "@wdio/testingbot-service": "^8.18.2",
-    "appium-uiautomator2-driver": "^2.31.2"
+    "appium-uiautomator2-driver": "^2.31.2",
+    "typescript": "^5.3.3"
   }
 }

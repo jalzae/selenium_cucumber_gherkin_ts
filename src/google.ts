@@ -7,8 +7,8 @@ export async function startWebDriver() {
   driver = new webdriver.Builder().forBrowser('chrome').build();
 }
 
-export async function openGoogle() {
-  await driver.get('http://www.google.com');
+export async function openGoogle(url: string = 'google.com') {
+  await driver.get('http://www.' + url);
 }
 
 export async function searchKeyword(keyword: string) {

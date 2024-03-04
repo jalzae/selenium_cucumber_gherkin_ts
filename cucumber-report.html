@@ -397,7 +397,7 @@ pre {
           </div>
           <div class="label-container">
             <div class="generated-on">
-              Sun Mar 03 2024 14:37:19 GMT+0700 (Western Indonesia Time)
+              Mon Mar 04 2024 18:38:02 GMT+0700 (Western Indonesia Time)
             </div>
           </div>
       </div>
@@ -413,7 +413,7 @@ pre {
         </div>
         <div class="feature-value">
           <h5>
-            3
+            1
           </h5>
         </div>
       </div>
@@ -423,7 +423,7 @@ pre {
         </div>
         <div class="feature-value">
           <h5>
-            3
+            0
           </h5>
         </div>
       </div>
@@ -441,6 +441,17 @@ pre {
           
               
                   
+                    <div class="card undefined-box">
+                      <div class="feature-title">
+                        <h4>Undefined Scenarios</h2>
+                      </div>
+                      <div class="feature-value">
+                        <h5>
+                          1
+                        </h5>
+                      </div>
+                    </div>
+                    
                       
     </div>
     <div class="row">
@@ -490,7 +501,7 @@ pre {
                           <strong>
                             Test Environment:
                           </strong>
-                          STAGING
+                          Local
                         </div>
                       </div>
                       
@@ -512,29 +523,7 @@ pre {
                           <strong>
                             Platform:
                           </strong>
-                          Windows 10
-                        </div>
-                      </div>
-                      
-                  
-                    
-                      <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                        <div class=pull-left>
-                          <strong>
-                            Parallel:
-                          </strong>
-                          Scenarios
-                        </div>
-                      </div>
-                      
-                  
-                    
-                      <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                        <div class=pull-right-lg>
-                          <strong>
-                            Executed:
-                          </strong>
-                          Remote
+                          OSX
                         </div>
                       </div>
                       
@@ -560,15 +549,15 @@ pre {
                     <div class="tags">
                     </div>
                     
-                    <a data-toggle="collapse" href="#collapseFeature489df762-fcad-4e0f-8004-ed4e296b6a0d">
+                    <a data-toggle="collapse" href="#collapseFeaturecb107e12-4c39-4816-8c1e-97c8d2d8489e">
                         <i class="glyphicon glyphicon-chevron-right"></i>
                         <i class="glyphicon glyphicon-chevron-down"></i>
-                        <b>Feature:</b>Google Search
+                        <b>Feature:</b>Simple Android Test
                         <span class="label-container">
-              <span class="label label-success"
-                                                         title="3 Scenarios Passed">3</span>
               
               
+              <span class="label label-info"
+                                                             title="1 Scenarios Undefined">1</span>
               
               
               
@@ -576,7 +565,7 @@ pre {
                     </a>
                 </h4>
             </div>
-            <div id="collapseFeature489df762-fcad-4e0f-8004-ed4e296b6a0d" class="panel-collapse collapse">
+            <div id="collapseFeaturecb107e12-4c39-4816-8c1e-97c8d2d8489e" class="panel-collapse collapse">
                 <div class="panel-body">
                     
                     
@@ -589,20 +578,20 @@ pre {
                                 <div class="tags">
                                 </div>
                                 
-                                <a data-toggle="collapse" href="#collapseScenario465531cd-938f-419c-85ca-fe6951110fbe">
+                                <a data-toggle="collapse" href="#collapseScenariodee0b0c9-38d4-43ce-8be5-22139e4793a9">
                                     <div>
 
                                         <div style="padding-right: 30px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario Outline:</b><div class="ellipsis" data-text="Open Google and search for various terms">Open Google and search for various terms</div>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Verify Android App is Opened">Verify Android App is Opened</div>
                                         </div>
                                         <div>
                             <span class="label-container ">
                               
-                              <span class="label label-success"
-                                                               title="3 Steps Passed">3</span>
                               
+                              <span class="label label-info"
+                                                                   title="4 Steps Undefined">4</span>
                               
                               
                               
@@ -614,28 +603,30 @@ pre {
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapseScenario465531cd-938f-419c-85ca-fe6951110fbe"
+                        <div id="collapseScenariodee0b0c9-38d4-43ce-8be5-22139e4793a9"
                              class="panel-collapse collapse">
                             <div class="panel-body">
                                 <div></div>
                                 
                                 
                                 
+                                
+                                
                                 <p class="scenario-container">
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
+                                    <span class="label label-info" title="Undefined"><i
+                                            class="glyphicon glyphicon-flash"></i></span>
                                     
                                     
                                     <span class="text">
                         <span class="keyword highlight">Given </span>
-                          <span> I have opened Google</span>
+                          <span> Apps opened normally and have some element</span>
                             
                           
                               <span class="step-duration">
-                               2s 858ms
+                               < 1ms
                               </span>
                             
                          
@@ -646,6 +637,13 @@ pre {
                       </span>
                                 
                                 
+                                <pre class=info>
+<br>Then(/^Apps opened normally and have some element$/, function(callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback(null, 'pending');
+});
+                        </pre>
+                                    
 
                                     
 
@@ -663,55 +661,17 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">When </span>
-                          <span> I search for &quot;webdriver&quot;</span>
-                            
-                          
-                              <span class="step-duration">
-                               223ms
-                              </span>
-                            
-                         
-                            
-                          
-                          <!-- Adding data table data-->
-                          
-                      </span>
-                                
-                                
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
+                                    <span class="label label-info" title="Undefined"><i
+                                            class="glyphicon glyphicon-flash"></i></span>
                                     
                                     
                                     <span class="text">
                         <span class="keyword highlight">Then </span>
-                          <span> Title is include with &quot;webdriver&quot;</span>
+                          <span> add some number</span>
                             
                           
                               <span class="step-duration">
-                               747ms
+                               < 1ms
                               </span>
                             
                          
@@ -722,88 +682,13 @@ pre {
                       </span>
                                 
                                 
-
+                                <pre class=info>
+<br>Then(/^add some number$/, function(callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback(null, 'pending');
+});
+                        </pre>
                                     
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                
-                                
-                                <div class="tags">
-                                </div>
-                                
-                                <a data-toggle="collapse" href="#collapseScenario7e030cb5-e9ec-47e0-9d6f-1e805112b691">
-                                    <div>
-
-                                        <div style="padding-right: 30px">
-                                            <i class="glyphicon glyphicon-chevron-right"></i>
-                                            <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario Outline:</b><div class="ellipsis" data-text="Open Google and search for various terms">Open Google and search for various terms</div>
-                                        </div>
-                                        <div>
-                            <span class="label-container ">
-                              
-                              <span class="label label-success"
-                                                               title="3 Steps Passed">3</span>
-                              
-                              
-                              
-                              
-                              
-                            </span>
-                                        </div>
-                                    </div>
-                                    <div><small><i></i></small></div>
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseScenario7e030cb5-e9ec-47e0-9d6f-1e805112b691"
-                             class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <div></div>
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">Given </span>
-                          <span> I have opened Google</span>
-                            
-                          
-                              <span class="step-duration">
-                               1s 704ms
-                              </span>
-                            
-                         
-                            
-                          
-                          <!-- Adding data table data-->
-                          
-                      </span>
-                                
-                                
 
                                     
 
@@ -821,55 +706,17 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">When </span>
-                          <span> I search for &quot;blogspot&quot;</span>
-                            
-                          
-                              <span class="step-duration">
-                               187ms
-                              </span>
-                            
-                         
-                            
-                          
-                          <!-- Adding data table data-->
-                          
-                      </span>
-                                
-                                
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
+                                    <span class="label label-info" title="Undefined"><i
+                                            class="glyphicon glyphicon-flash"></i></span>
                                     
                                     
                                     <span class="text">
                         <span class="keyword highlight">Then </span>
-                          <span> Title is include with &quot;blogspot&quot;</span>
+                          <span> add in another input number</span>
                             
                           
                               <span class="step-duration">
-                               894ms
+                               < 1ms
                               </span>
                             
                          
@@ -880,88 +727,13 @@ pre {
                       </span>
                                 
                                 
-
+                                <pre class=info>
+<br>Then(/^add in another input number$/, function(callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback(null, 'pending');
+});
+                        </pre>
                                     
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                
-                                
-                                <div class="tags">
-                                </div>
-                                
-                                <a data-toggle="collapse" href="#collapseScenariof8d39434-ff21-4d5a-b121-5192f8fa401c">
-                                    <div>
-
-                                        <div style="padding-right: 30px">
-                                            <i class="glyphicon glyphicon-chevron-right"></i>
-                                            <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario Outline:</b><div class="ellipsis" data-text="Open Google and search for various terms">Open Google and search for various terms</div>
-                                        </div>
-                                        <div>
-                            <span class="label-container ">
-                              
-                              <span class="label label-success"
-                                                               title="3 Steps Passed">3</span>
-                              
-                              
-                              
-                              
-                              
-                            </span>
-                                        </div>
-                                    </div>
-                                    <div><small><i></i></small></div>
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseScenariof8d39434-ff21-4d5a-b121-5192f8fa401c"
-                             class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <div></div>
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">Given </span>
-                          <span> I have opened Google</span>
-                            
-                          
-                              <span class="step-duration">
-                               1s 651ms
-                              </span>
-                            
-                         
-                            
-                          
-                          <!-- Adding data table data-->
-                          
-                      </span>
-                                
-                                
 
                                     
 
@@ -979,55 +751,17 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">When </span>
-                          <span> I search for &quot;cucumber&quot;</span>
-                            
-                          
-                              <span class="step-duration">
-                               214ms
-                              </span>
-                            
-                         
-                            
-                          
-                          <!-- Adding data table data-->
-                          
-                      </span>
-                                
-                                
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
+                                    <span class="label label-info" title="Undefined"><i
+                                            class="glyphicon glyphicon-flash"></i></span>
                                     
                                     
                                     <span class="text">
                         <span class="keyword highlight">Then </span>
-                          <span> Title is include with &quot;cucumber&quot;</span>
+                          <span> click result and show correct result</span>
                             
                           
                               <span class="step-duration">
-                               965ms
+                               < 1ms
                               </span>
                             
                          
@@ -1038,6 +772,13 @@ pre {
                       </span>
                                 
                                 
+                                <pre class=info>
+<br>Then(/^click result and show correct result$/, function(callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback(null, 'pending');
+});
+                        </pre>
+                                    
 
                                     
 
@@ -1048,6 +789,8 @@ pre {
                                     
                                 </div>
                                 </p>
+                                
+                                
                                 
                                 
                             </div>
@@ -1084,8 +827,8 @@ pre {
       drawChart({
         "title": "Features",
         "failed": 0,
-        "passed": 1,
-        "notdefined": 0,
+        "passed": 0,
+        "notdefined": 1,
         "pending": 0,
         "skipped": 0,
         "ambiguous": 0
@@ -1095,9 +838,9 @@ pre {
       drawChart({
         "title": "Scenarios",
         "failed": 0,
-        "passed": 3,
+        "passed": 0,
         "rerun": 0,
-        "notdefined": 0,
+        "notdefined": 1,
         "pending": 0,
         "skipped": 0,
         "ambiguous": 0

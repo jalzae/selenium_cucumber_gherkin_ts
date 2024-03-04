@@ -1,21 +1,65 @@
+// wdio.conf.js
 exports.config = {
-    path: '/', // The default path for Appium
-    hostname: '192.168.100.14',
-    port: 4723, // The default port for Appium
-    specs: ['./test.js'], // Your test script file
+    runner: 'local',
+    path: process.env.APPIUM_PATH,
+    hostname: process.env.APPIUM_HOST,
+    port: parseInt(process.env.APPIUM_PORT),
+    specs: ['./android/**/*.feature'],
     capabilities: [
         {
-            platformName: 'Android',
-            'appium:deviceName': 'U48TZ5YTKZOJCQ4D',
-            'appium:app': "/Users/applemacbookprom2/Project/Test/selenium_js_example/sample.apk",
-            'appium:appPackage': 'com.sampleapp',
-            'appium:automationName': 'UiAutomator2',
+            maxInstances: 1,
+            'appium:platformName': 'Android',
+            'appium:app': process.env.APPIUM_APP_PATH,
+            'appium:deviceName': process.env.APPIUM_DEVICE_NAME,
+            'appium:appPackage': process.env.APPIUM_APP_PACKAGE,
+            'appium:automationName': process.env.APPIUM_AUTOMATION_NAME,
         },
     ],
-    logLevel: 'error',
-    framework: 'mocha',
+    logLevel: 'info',
+    framework: 'cucumber',
+    cucumberOpts: {
+        requireModule: ['ts-node/register'],
+        require: ['./features/android/**/*.ts'],
+        format: ['pretty'],
+        strict: false,
+    },
+    services: ['appium'],
+    port: parseInt(process.env.APPIUM_PORT),
+    baseUrl: process.env.APPIUM_PATH,
+    waitforTimeout: 10000,
+    connectionRetryTimeout: 120000,
+    connectionRetryCount: 3,
+    frameworkPath: require.resolve('protractor-cucumber-framework'),
     reporters: ['spec'],
     mochaOpts: {
         timeout: 60000,
     },
+    afterStep: function (uri, feature, scenario, step, result) {
+        browser.takeScreenshot();
+    },
+    after: function (exitCode, config, capabilities) {
+        generateCucumberReport();
+    },
 };
+
+function generateCucumberReport() {
+    const cucumberHtmlReporter = require('cucumber-html-reporter');
+
+    const options = {
+        theme: 'bootstrap',
+        jsonFile: './cucumber-report.json',
+        output: './cucumber-report.html',
+        reportSuiteAsScenarios: true,
+        launchReport: true,
+        screenshotsDirectory: 'screenshots/',
+        storeScreenshots: true,
+        metadata: {
+            'App Version': '1.0.0',
+            'Test Environment': 'Local',
+            'Browser': 'Chrome',
+            'Platform': 'OSX',
+        },
+    };
+
+    cucumberHtmlReporter.generate(options);
+}

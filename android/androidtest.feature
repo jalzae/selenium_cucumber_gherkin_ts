@@ -1,7 +1,7 @@
-Feature: Run First android and test elemen
+Feature: Simple Android Test
 
-  Scenario: Testing calculator apps
+  Scenario: Verify Android App is Opened
     Given Apps opened normally and have some element
     Then add some number
-    Then add in other input number
+    Then add in another input number
     Then click result and show correct result

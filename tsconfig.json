@@ -11,7 +11,8 @@
     "moduleResolution": "node"
   },
   "include": [
-    "features/**/*.ts"
+    "features/**/*.ts",
+    "android/**/*.ts"
   ],
   "exclude": [
     "node_modules"
