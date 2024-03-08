@@ -4,7 +4,7 @@ exports.config = {
     path: process.env.APPIUM_PATH,
     hostname: process.env.APPIUM_HOST,
     port: parseInt(process.env.APPIUM_PORT),
-    specs: ['./android/**/*.feature'],
+    specs: ['./android/**/*.test.ts'],
     capabilities: [
         {
             maxInstances: 1,
@@ -16,13 +16,7 @@ exports.config = {
         },
     ],
     logLevel: 'info',
-    framework: 'cucumber',
-    cucumberOpts: {
-        requireModule: ['ts-node/register'],
-        require: ['./features/android/**/*.ts'],
-        format: ['pretty'],
-        strict: false,
-    },
+    framework: 'mocha',
     services: ['appium'],
     port: parseInt(process.env.APPIUM_PORT),
     baseUrl: process.env.APPIUM_PATH,
@@ -30,7 +24,16 @@ exports.config = {
     connectionRetryTimeout: 120000,
     connectionRetryCount: 3,
     frameworkPath: require.resolve('protractor-cucumber-framework'),
-    reporters: ['spec'],
+    reporters: ['spec', ["html-nice", {
+        outputDir: './android/report/',
+        filename: 'report.html',
+        reportTitle: 'Test Report Title',
+        linkScreenshots: true,
+        showInBrowser: true,
+        collapseTests: false,
+        useOnAfterCommandForScreenshot: false
+    }
+    ]],
     mochaOpts: {
         timeout: 60000,
     },
@@ -38,28 +41,7 @@ exports.config = {
         browser.takeScreenshot();
     },
     after: function (exitCode, config, capabilities) {
-        generateCucumberReport();
+        // generateCucumberReport();
     },
 };
 
-function generateCucumberReport() {
-    const cucumberHtmlReporter = require('cucumber-html-reporter');
-
-    const options = {
-        theme: 'bootstrap',
-        jsonFile: './cucumber-report.json',
-        output: './cucumber-report.html',
-        reportSuiteAsScenarios: true,
-        launchReport: true,
-        screenshotsDirectory: 'screenshots/',
-        storeScreenshots: true,
-        metadata: {
-            'App Version': '1.0.0',
-            'Test Environment': 'Local',
-            'Browser': 'Chrome',
-            'Platform': 'OSX',
-        },
-    };
-
-    cucumberHtmlReporter.generate(options);
-}
