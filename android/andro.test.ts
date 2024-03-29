@@ -28,11 +28,10 @@ describe('Test Sum', () => {
     const sumElement = await client.$('~sum')
     const sum = await sumElement.getText()
     console.log(`Got value ${sum}`)
-    assert.equal(sum, '15') // 10 + 5
+    assert.equal(sum, '15')
   })
 
   after(async () => {
-    // Close the session
     await client.deleteSession();
   });
 });
