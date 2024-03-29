@@ -17,7 +17,13 @@ exports.config = {
     ],
     logLevel: 'info',
     framework: 'mocha',
-    services: ['appium'],
+    services: [
+        ['appium', {
+            command: 'appium',
+            logPath: './logs/'
+        }]
+    ],
+
     port: parseInt(process.env.APPIUM_PORT),
     baseUrl: process.env.APPIUM_PATH,
     waitforTimeout: 10000,
