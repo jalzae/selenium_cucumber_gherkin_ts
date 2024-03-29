@@ -4,65 +4,48 @@
     "elements": [
       {
         "description": "",
-        "id": "simple-android-test;verify-android-app-is-opened",
+        "id": "sum-feature;sum-feature",
         "keyword": "Scenario",
         "line": 3,
-        "name": "Verify Android App is Opened",
+        "name": "Sum Feature",
         "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 71750
-            }
-          },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 4,
-            "name": "Apps opened normally and have some element",
+            "name": "I have entered 50 into the calculator",
+            "match": {
+              "location": "features/example/example.ts:12"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 174957
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "When ",
             "line": 5,
-            "name": "add some number",
+            "name": "I have entered 70 into the calculator",
+            "match": {
+              "location": "features/example/example.ts:16"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 30874
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 6,
-            "name": "add in another input number",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 7,
-            "name": "click result and show correct result",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
+            "name": "I press add",
+            "match": {
+              "location": "features/example/example.ts:20"
+            },
             "result": {
               "status": "passed",
-              "duration": 73541
+              "duration": 26458
             }
           }
         ],
@@ -70,11 +53,268 @@
         "type": "scenario"
       }
     ],
-    "id": "simple-android-test",
+    "id": "sum-feature",
     "line": 1,
     "keyword": "Feature",
-    "name": "Simple Android Test",
+    "name": "Sum Feature",
     "tags": [],
-    "uri": "android/androidtest.feature"
+    "uri": "features/example/example.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "google-search;open-google-and-search-for-various-terms",
+        "keyword": "Scenario Outline",
+        "line": 10,
+        "name": "Open Google and search for various terms",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I have opened Google",
+            "match": {
+              "location": "features/google/google.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1828779374
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I search for \"webdriver\"",
+            "match": {
+              "location": "features/google/google.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 174264166
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Title is include with \"webdriver\"",
+            "match": {
+              "location": "features/google/google.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1129333415
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "google-search;open-google-and-search-for-various-terms",
+        "keyword": "Scenario Outline",
+        "line": 11,
+        "name": "Open Google and search for various terms",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I have opened Google",
+            "match": {
+              "location": "features/google/google.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1738487124
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I search for \"blogspot\"",
+            "match": {
+              "location": "features/google/google.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 172009625
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Title is include with \"blogspot\"",
+            "match": {
+              "location": "features/google/google.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1233341000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "google-search;open-google-and-search-for-various-terms",
+        "keyword": "Scenario Outline",
+        "line": 12,
+        "name": "Open Google and search for various terms",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I have opened Google",
+            "match": {
+              "location": "features/google/google.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1610609833
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I search for \"cucumber\"",
+            "match": {
+              "location": "features/google/google.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1326396292
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Title is include with \"cucumber\"",
+            "match": {
+              "location": "features/google/google.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 55770209
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "google-search",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Google Search",
+    "tags": [],
+    "uri": "features/google/google.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "greeting;say-hello",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Say hello",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "the greeter says hello",
+            "match": {
+              "location": "features/greeting/greeting.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 349417
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I should have heard \"hello\"",
+            "match": {
+              "location": "features/greeting/greeting.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 65833
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "greeting",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Greeting",
+    "tags": [],
+    "uri": "features/greeting/greeting.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "test-extension-feature;test-auto-text",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Test auto Text",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Default Value",
+            "match": {
+              "location": "features/testing/testing.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 143667
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "Can Access the value",
+            "match": {
+              "location": "features/testing/testing.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 46625
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "test-extension-feature",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Test Extension Feature",
+    "tags": [],
+    "uri": "features/testing/testing.feature"
   }
 ]

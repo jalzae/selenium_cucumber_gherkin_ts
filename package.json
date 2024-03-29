@@ -2,7 +2,7 @@
   "scripts": {
     "start": "npx tsc && node build/index.js",
     "test:cucumber": "cucumber-js -p default",
-    "test": "tsc && cucumber-js && npm run report",
+    "test": "tsc && cucumber-js && node report.js",
     "report": "node report.js",
     "test:file": "ts-node ./system/single.ts",
     "test:android": "ts-node ./system/android.ts",
